@@ -1,6 +1,6 @@
 {
   "name": "@cotars/buffer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "keywords": [
     "typescript",
@@ -11,7 +11,7 @@
     "cotars.io",
     "cotars"
   ],
-  "main": "index.js",
+  "lib": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -20,15 +20,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.0.13",
-    "easy-monitor": "^2.2.8",
     "typescript": "^3.9.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cotars-io/buffer.git"
+    "url": "git+https://github.com/cotars/buffer.git"
   },
   "bugs": {
-    "url": "https://github.com/cotars-io/buffer/issues"
+    "url": "https://github.com/cotars/buffer/issues"
   },
-  "homepage": "https://github.com/cotars-io/buffer#readme"
+  "homepage": "https://github.com/cotars/buffer#readme"
 }
