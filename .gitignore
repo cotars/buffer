@@ -1,0 +1,10 @@
+lib
+package-lock.json
+
+# Mac
+.DS_Store
+.vscode/
+
+# Node.js
+node_modules
+*.log
