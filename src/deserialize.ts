@@ -86,24 +86,6 @@ function readEachValue(reader: Reader) {
     return { tag, values: readValue(reader, flag) };
 }
 
-export function transform<T>(data: Object, meta: MetaModel): Partial<T> {
-    const object = new Object();
-    meta.fields.forEach((f) => {
-        if (!data[f.tag]) {
-            return;
-        }
-        if (f.type == Type.MODEL) {
-            if (!f.model) {
-                throw new Error("field not defined!");
-            }
-            object[f.name] = transform(data[f.tag], f.model);
-        } else {
-            object[f.name] = data[f.tag];
-        }
-    });
-    return object as any;
-}
-
 export function deserialize(buffer: number[]): Object {
     const data = readModel(buffer);
     return data as Object;

@@ -2,7 +2,7 @@ import { Type, MetaField, MetaModel } from "./common";
 
 export class Model {}
 
-type DefinedMeta = {
+export type DefinedMeta = {
     type: Type;
     repeated?: boolean;
     name?: string;
